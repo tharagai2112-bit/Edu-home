@@ -11,15 +11,15 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="assets/styles.css"
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-   </head>
+</head>
 
 <body>
     <!-- Top Bar -->
@@ -257,7 +257,7 @@
     </section>
 
     <!-- About Intro Section -->
-    <section class="about-intro">
+    <section class="about-intro animate-on-scroll">
         <div class="container">
             <!-- Left Side -->
             <div class="about-intro-left">
@@ -309,7 +309,7 @@
     </section>
 
     <!-- Vision Mission Value Section -->
-    <section class="vmv-section">
+    <section class="vmv-section animate-on-scroll">
         <div class="container">
             <div class="vmv-grid">
                 <!-- Our Vision -->
@@ -346,16 +346,22 @@
 
         </div>
         <div class="parallax-overlay"></div>
-        <div class="parallax-content">
+        <div class="parallax-content animate-on-scroll">
             <h2>Shaping Bright Careers Through Quality Education</h2>
             <p>At Edu home, we believe education is the key to growth and success. With expert training in CA, CMA and
                 ACCA, we guide students beyond classrooms, helping them build strong knowledge, practical skills and
                 confidence for a global career.</p>
         </div>
     </section>
+    <style>
+        .parallax-bg {
+            background-image: url('assets/boygirl.jpg');
+        }
+    </style>
+
 
     <!-- Great Minds Section -->
-    <section class="great-minds-section">
+    <section class="great-minds-section animate-on-scroll">
         <div class="container">
             <!-- Left Side -->
             <div class="great-minds-left">
@@ -381,7 +387,7 @@
     </section>
 
     <!-- Faculty Section -->
-    <section class="faculty-section">
+    <section class="faculty-section animate-on-scroll">
         <div class="container">
             <div class="faculty-grid">
                 <!-- Person 1 -->
@@ -470,7 +476,7 @@
     </section>
 
     <!-- Stats Section (By Number) -->
-    <section class="stats-section">
+    <section class="stats-section animate-on-scroll">
         <div class="container">
             <!-- Left Side (Map) -->
             <div class="stats-map"></div>
@@ -514,7 +520,7 @@
     </section>
 
     <!-- Why Choose Section -->
-    <section class="why-choose-section">
+    <section class="why-choose-section animate-on-scroll">
         <div class="container">
             <h2>Why Choose Edu Home Connect?</h2>
             <p>At Edu home, we provide more than just coaching, we deliver career-oriented education in CA, CMA, ACCA
@@ -526,60 +532,64 @@
     </section>
 
     <!-- Features Grid Section -->
-    <section class="features-grid-section">
+    <section class="features-grid-section animate-on-scroll">
         <div class="container">
             <div class="features-matrix">
                 <!-- Row 1 -->
                 <div class="matrix-item">
-                    <div class="matrix-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Exclusive for Aspiring Finance Professionals</h3>
-                    <p>Designed for students & working professionals by expert faculty and rank holders.</p>
+                    <div class="matrix-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI-Integrated Learning</h3>
+                    <p>Adaptive learning paths that evolve with your progress, ensuring you focus on what matters most.
+                    </p>
                 </div>
                 <div class="matrix-item">
-                    <div class="matrix-icon"><i class="fas fa-rocket"></i></div>
-                    <h3>Experienced Faculty & Mentors</h3>
-                    <p>Learn from CA/CMA qualified professionals with 10-20 years of experience and All India Rank
-                        holders.</p>
+                    <div class="matrix-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>Global Alumni Network</h3>
+                    <p>Connect with successful professionals worldwide who have walked the path you are on today.</p>
                 </div>
                 <div class="matrix-item">
-                    <div class="matrix-icon"><i class="fas fa-file-alt"></i></div>
-                    <h3>Score Breakdown Analysis</h3>
-                    <p>Understand your performance with a detailed score breakdown. See how marks are distributed across
-                        sections.</p>
+                    <div class="matrix-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Real-World Simulations</h3>
+                    <p>Practical case studies and financial modeling tasks bridging the gap between theory and industry
+                        practice.</p>
                 </div>
 
                 <!-- Row 2 (Boxed) -->
                 <div class="matrix-item boxed">
-                    <div class="matrix-icon"><i class="fas fa-bullhorn"></i></div>
-                    <h3>One-to-One Study Planner & Daily Follow-Ups</h3>
-                    <p>Personalized schedules based on your progress.</p>
+                    <div class="matrix-icon"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Doubt Resolution</h3>
+                    <p>Instant access to expert support whenever you're stuck, ensuring continuous learning momentum.
+                    </p>
                 </div>
                 <div class="matrix-item boxed">
-                    <div class="matrix-icon"><i class="fas fa-users"></i></div>
-                    <h3>Dedicated Mentor for Each Student</h3>
-                    <p>Individualized support to track and guide your learning journey.</p>
+                    <div class="matrix-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Placement Assistance</h3>
+                    <p>Dedicated career cell providing resume building, mock interviews, and access to top-tier job
+                        opportunities.</p>
                 </div>
                 <div class="matrix-item boxed">
-                    <div class="matrix-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <h3>Expert Faculty Guidance & Weekly Webinars</h3>
-                    <p>Live strategy sessions until your exam day.</p>
+                    <div class="matrix-icon"><i class="fas fa-laptop-house"></i></div>
+                    <h3>Offline & Online Hybrid</h3>
+                    <p>Flexible learning modes that allow you to switch between classroom energy and home comfort.</p>
                 </div>
 
                 <!-- Row 3 -->
                 <div class="matrix-item">
-                    <div class="matrix-icon"><i class="fas fa-briefcase"></i></div>
-                    <h3>Post-Exam Career Support</h3>
-                    <p>Excel training, interview preparation, and industry insights.</p>
+                    <div class="matrix-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Gamified Testing</h3>
+                    <p>Compete on leaderboards, earn badges, and make rigorous exam preparation engaging and fun.</p>
                 </div>
                 <div class="matrix-item">
-                    <div class="matrix-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Interactive Dashboard</h3>
-                    <p>Track your strengths and weaknesses in real time.</p>
+                    <div class="matrix-icon"><i class="fas fa-sitemap"></i></div>
+                    <h3>Visual Mind Maps</h3>
+                    <p>Simplify complex concepts with smart visual aids designed for quick revision and better
+                        retention.</p>
                 </div>
                 <div class="matrix-item">
-                    <div class="matrix-icon"><i class="fas fa-comments"></i></div>
-                    <h3>Individual Guidance Platform</h3>
-                    <p>A unique space for personal mentorship and doubt resolution.</p>
+                    <div class="matrix-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Mental Wellness Support</h3>
+                    <p>Holistic guidance sessions focused on stress management and maintaining peak mental performance.
+                    </p>
                 </div>
             </div>
         </div>
@@ -588,7 +598,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq-section animate-on-scroll">
         <div class="container">
             <!-- Left Side -->
             <div class="faq-left">
@@ -665,7 +675,7 @@
     </section>
 
     <!-- Empowering Students / CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section animate-on-scroll">
         <div class="cta-overlay"></div>
         <div class="container">
             <div class="cta-content">
@@ -979,6 +989,66 @@
 
         // Start auto play on load
         startAutoPlay();
+
+        // ===== Scroll Animations & Staggered Reveal =====
+        document.addEventListener('DOMContentLoaded', () => {
+            // Elements to animate individually (cards, items)
+            const staggerSelectors = [
+                '.vmv-card',
+                '.faculty-card',
+                '.feature-item',
+                '.stat-item',
+                '.matrix-item',
+                '.faq-item'
+            ];
+
+            // Add animation class to these elements dynamically
+            staggerSelectors.forEach(selector => {
+                document.querySelectorAll(selector).forEach(el => {
+                    el.classList.add('animate-on-scroll');
+                });
+            });
+
+            // Intersection Observer Setup
+            const observerOptions = {
+                threshold: 0.15, // Trigger when 15% visible
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+
+                        // Handle staggered children if this is a container/grid
+                        // (Optional: Logic can be refined here if we want parent-controlled staggering)
+
+                        // Stop observing once visible (optional, remove if you want re-trigger)
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all .animate-on-scroll elements
+            document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+                // Check if element is inside a container that we also animated? 
+                // We might want to delay these slightly or stagger them.
+
+                // Simple Staggering Logic based on index
+                const parent = el.parentElement;
+                if (parent) {
+                    const siblings = Array.from(parent.children).filter(child => child.classList.contains('animate-on-scroll'));
+                    const index = siblings.indexOf(el);
+
+                    if (index > -1) {
+                        // Add delay based on index (e.g., 0s, 0.1s, 0.2s...)
+                        el.style.transitionDelay = `${index * 0.1}s`;
+                    }
+                }
+
+                observer.observe(el);
+            });
+        });
     </script>
 
     <!-- Floating Contact Icons -->
