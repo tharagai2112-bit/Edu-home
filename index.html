@@ -77,6 +77,9 @@
                 <span></span>
             </button>
 
+            <!-- Mobile Menu Backdrop -->
+            <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
             <!-- Navigation Section -->
             <div class="nav-section" id="navSection">
                 <nav class="main-nav">
@@ -787,10 +790,19 @@
         // Mobile Menu Toggle
         const mobileMenuToggle = document.getElementById('mobileMenuToggle');
         const navSection = document.getElementById('navSection');
+        const mobileMenuBackdrop = document.getElementById('mobileMenuBackdrop');
 
         mobileMenuToggle.addEventListener('click', () => {
             navSection.classList.toggle('active');
             mobileMenuToggle.classList.toggle('active');
+            mobileMenuBackdrop.classList.toggle('active');
+        });
+
+        // Close menu when clicking on backdrop
+        mobileMenuBackdrop.addEventListener('click', () => {
+            navSection.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+            mobileMenuBackdrop.classList.remove('active');
         });
 
         // Dropdown toggle for mobile
@@ -815,6 +827,7 @@
             if (!navSection.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
                 navSection.classList.remove('active');
                 mobileMenuToggle.classList.remove('active');
+                mobileMenuBackdrop.classList.remove('active');
             }
         });
 
@@ -825,9 +838,21 @@
                 if (window.innerWidth <= 992) {
                     navSection.classList.remove('active');
                     mobileMenuToggle.classList.remove('active');
+                    mobileMenuBackdrop.classList.remove('active');
                 }
             });
         });
+
+        // Close mobile menu on scroll
+        window.addEventListener('scroll', () => {
+            if (window.innerWidth <= 992 && navSection.classList.contains('active')) {
+                navSection.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                mobileMenuBackdrop.classList.remove('active');
+            }
+        });
+
+
 
         // ===== Carousel Functionality =====
         const carouselTrack = document.getElementById('carouselTrack');
