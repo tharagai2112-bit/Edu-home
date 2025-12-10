@@ -2654,7 +2654,7 @@ ul {
     .newsletter-box {
         width: 95%;
         padding: 30px 20px;
-        bottom: -150px;
+        bottom: -160px;
     }
 
     .newsletter-box h3 {
@@ -2707,7 +2707,7 @@ ul {
     .newsletter-box {
         width: 98%;
         padding: 24px 16px;
-        bottom: -130px;
+        bottom: -140px;
     }
 
     .newsletter-box h3 {
@@ -2946,32 +2946,46 @@ ul {
 
     .top-bar .container {
         flex-direction: column;
-        gap: 8px;
-        padding: 8px 12px;
+        gap: 12px;
+        padding: 10px 15px;
         text-align: center;
+        align-items: center;
     }
 
     .contact-info {
         flex-direction: column;
-        gap: 6px;
+        gap: 8px;
         width: 100%;
+        align-items: center;
     }
 
     .contact-info a {
         font-size: 12px;
-        gap: 5px;
+        gap: 6px;
         justify-content: center;
+        padding: 6px 14px;
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        min-width: 200px;
+        max-width: 280px;
+        display: inline-flex;
+    }
+
+    .contact-info a:hover {
+        background: rgba(255, 255, 255, 0.2);
     }
 
     .social-icons {
-        gap: 10px;
+        gap: 12px;
         justify-content: center;
+        width: 100%;
     }
 
     .social-icons a {
-        width: 26px;
-        height: 26px;
-        font-size: 12px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
     }
 }
 
@@ -3569,13 +3583,62 @@ ul {
 @media (max-width: 768px) {
     .floating-icons {
         bottom: 20px;
-        left: 20px;
-        gap: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        gap: 12px;
+        width: auto;
     }
 
     .floating-icon {
-        width: 50px;
+        width: auto;
+        min-width: 130px;
         height: 50px;
-        font-size: 24px;
+        border-radius: 25px;
+        font-size: 20px;
+        padding: 0 20px;
+        gap: 10px;
+        flex-direction: row;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .floating-icon::after {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .floating-icon.whatsapp::after {
+        content: 'WhatsApp';
+    }
+
+    .floating-icon.call::after {
+        content: 'Call Us';
+    }
+
+    .floating-icon:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+    }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+    .floating-icons {
+        bottom: 15px;
+        gap: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .floating-icon {
+        min-width: 110px;
+        height: 45px;
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .floating-icon::after {
+        font-size: 12px;
     }
 }
