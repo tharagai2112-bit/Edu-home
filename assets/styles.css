@@ -566,24 +566,24 @@ ul {
     top: 50%;
     transform: translateY(-50%);
     width: 55px;
+    /* Keep hit area */
     height: 55px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
+    /* Keep hit area */
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--white);
-    font-size: 20px;
+    font-size: 24px;
+    /* Slightly larger for better visibility without container */
     cursor: pointer;
     transition: var(--transition);
     z-index: 20;
+    border: none;
 }
 
 .carousel-nav:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-50%) scale(1.1);
+    color: var(--accent-yellow);
 }
 
 .carousel-nav.prev {
