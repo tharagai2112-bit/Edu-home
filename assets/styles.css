@@ -985,6 +985,11 @@ ul {
 
 /* Mobile banner layout - show images below content */
 @media (max-width: 992px) {
+    .carousel {
+        height: auto;
+        min-height: 600px;
+    }
+
     .carousel-slide {
         flex-direction: column;
         justify-content: center;
@@ -1022,6 +1027,13 @@ ul {
 
     .slide-buttons {
         justify-content: center;
+    }
+
+    /* Center nav buttons to image in mobile */
+    .carousel-nav {
+        top: auto;
+        bottom: 200px;
+        transform: translateY(50%);
     }
 
     /* Hide top bar on mobile */
